@@ -37,9 +37,11 @@ I wrote it with Python. I have used Pandas for main analysis and sklearn for K c
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+Bellow is a list of websites that I have used to study pandas
 * [Pandas documentation](https://pandas.pydata.org/docs/)
 * [Pandas Tutorial on W3Schools](https://www.w3schools.com/python/pandas/default.asp)
+* [SoloLearn data science course (requires registration)](https://www.sololearn.com/en/learn/courses/le-data-science)
+
 
 # Future Work
 
