@@ -3,9 +3,10 @@
 I wrote this program to learn how to do data analysis with Python. While I studied R in the last module, I chose Python for this module to continue my data analysis journey.
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=wMQuNlAeNOQ)
 
 # Data Analysis Results
+I have used data set called [Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 Program features 10 questions and answers. Below are my 3 favorite conclusions.
 Question 1: What is the average score (for math, reading, and writing) for students who completed the test preparation course vs those who didn't?
@@ -32,7 +33,7 @@ This means that if students have good math scores, their reading scores are also
 
 I have used Pycharm to write the code and Visual Studio Code to submit it on git. 
 
-I wrote it with Python. I have used Pandas for main analysis and sklearn for K clustering
+I wrote it with Python. I have used Pandas for main analysis and sklearn for K clustering.
 
 # Useful Websites
 

@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 # Load the dataset
 df = pd.read_csv('StudentsPerformance.csv')
 
-# Question 1: What is the average score (for math, reading, and writing) for students who completed the test preparation course vs those who didn't?
+# Question 1: What is the average score (for math, reading, and writing) for students who have completed the test preparation course vs those who didn't?
 # This code filters the dataframe for students who completed the test preparation course, calculates the average scores, rounds them to the nearest whole number,
 # does the same for students who did not complete the course, and calculates the difference between the two averages
 df_prep = df[df['test preparation course'] == 'completed']
@@ -54,7 +54,7 @@ print(grade_distribution)
 # This code applies the K-Means clustering algorithm to the scores, adds the cluster labels to the dataframe, and prints the average scores for each cluster
 # Round the scores to the nearest whole number
 df_rounded = df.round({'math score': 0, 'reading score': 0, 'writing score': 0})
-
+# This code applies the K-Means clustering algorithm to the scores, adds the cluster labels to the dataframe, and prints the average scores for each cluster
 kmeans = KMeans(n_clusters=3)
 df_rounded['cluster'] = kmeans.fit_predict(df_rounded[['math score', 'reading score', 'writing score']])
 cluster_averages = df_rounded.groupby('cluster')[['math score', 'reading score', 'writing score']].mean()
@@ -77,7 +77,6 @@ print("\nParental level of education with the highest sum of writing scores:", h
 
 # Question 8: What is the average math score for students who have standard lunch?
 # This code filters the dataframe for students who have standard lunch and calculates the average math score
-
 df_standard = df[df['lunch'] == 'standard']
 avg_math_standard = df_standard['math score'].mean()
 
